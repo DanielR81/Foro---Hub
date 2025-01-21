@@ -20,6 +20,9 @@ Una API REST (Representational State Transfer) es un estilo de arquitectura que 
 ### 1. Configuración Inicial
 Antes de comenzar, conecta tu aplicación a un servidor de base de datos (MySQL o PostgreSQL). Una vez conectada, registra manualmente un usuario con un correo y una contraseña encriptada en la base de datos. Para encriptar la contraseña, puedes usar herramientas como [Browserling BCrypt](https://www.browserling.com/tools/bcrypt).
 
+![Screenshot 2025-01-20 212416](https://github.com/user-attachments/assets/36856664-8581-4cbf-84bb-c84eea4f8902)
+
+
 ### 2. Ejemplo de Usuario
 Crea un usuario en la base de datos con las siguientes características:
 - **Correo:** `daniel@hotmail.com`
@@ -42,6 +45,10 @@ Revisa los endpoints implementados en los controladores para conocer las funcion
 ### 5. Obtención del Token
 - Si las credenciales son válidas, el servidor devolverá un token JWT.
 - Este token debe incluirse en las cabeceras de las peticiones subsiguientes como `Authorization: Bearer <token>`.
+
+![Screenshot 2025-01-20 212938](https://github.com/user-attachments/assets/6d17cb06-5af9-4f21-acec-ae31764c1017)
+- 
+
 
 ### 6. Probar las Demás Funciones
 Con el token obtenido, podrás realizar pruebas en los demás endpoints protegidos de la API. Asegúrate de revisar la documentación o los controladores para conocer las rutas disponibles.
